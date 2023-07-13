@@ -18,20 +18,20 @@ public class Main {
                 System.out.println("Creating new file...in progress");
                 System.out.println("Enter file name:");
                 String fileName = sc.nextLine();
-                fw.getOutput(fw.createFile(fileName));
+                getOutput(fw.createFile(fileName));
             }
             case 2 -> {
                 System.out.println("Enter file name:");
                 String fileName = sc.nextLine();
                 System.out.println("Enter file content: ");
                 String content = sc.nextLine();
-                fw.getOutput(fw.writeToFile(fileName, content));
+                getOutput(fw.writeToFile(fileName, content));
             }
             case 3 -> {
                 System.out.println("Opening a file...in progress");
                 System.out.println("Enter file name:");
                 String fileName = sc.nextLine();
-                fr.getOutput(fr.readFromFile(fileName));
+                getOutput(fr.readFromFile(fileName));
             }
             case 0 -> {
                 System.out.println("The program was terminated by the User");
@@ -69,5 +69,9 @@ public class Main {
             }
         }
         return num;
+    }
+
+    public static void getOutput(String output) {
+        System.out.println(output);
     }
 }

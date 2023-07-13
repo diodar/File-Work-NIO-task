@@ -20,8 +20,4 @@ public class FileReadService {
             return "Something wrong " + e.getMessage();
         }
     }
-
-    public void getOutput(String output) {
-        System.out.println(output);
-    }
 }

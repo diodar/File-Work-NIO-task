@@ -37,8 +37,4 @@ public class FileWriteService {
         }
         return "Recorded in: " + path;
     }
-
-    public void getOutput(String output) {
-        System.out.println(output);
-    }
 }
